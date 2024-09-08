@@ -22,9 +22,10 @@ class _WallpaperScreenState extends State<WallpaperScreen> {
 
   fetchApi() async {
     await http.get(Uri.parse("https://api.pexels.com/v1/curated?per_page=80"),
+        //Use your own API key of Pexels
         headers: {
           'Authorization':
-              'EwQKEl14QHJdILsy7uEha1w7edjoxRAy5h6sIAOjgJKRrpevO8PXEH6u'
+              'API KEY REQUIRED' 
         }).then((value) {
       Map result = jsonDecode(value.body);
 
